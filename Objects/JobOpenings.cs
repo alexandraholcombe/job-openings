@@ -9,6 +9,7 @@ namespace JobOpenings.Objects
     private string _description;
     private string _email;
     private string _contact;
+    private static List<Job> _instances = new List<Job>{};
 
     public Job(string title, string description, string email, string contact)
     {
@@ -16,6 +17,10 @@ namespace JobOpenings.Objects
       _description = description;
       _email = email;
       _contact = contact;
+    }
+
+    public static List<Job> GetAll(){
+      return _instances;
     }
 
     public string GetTitle()
