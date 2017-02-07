@@ -17,4 +17,5 @@
     <label for="contact">Contact:</label>
     <input type="text" name="contact" id="contact">
   </div>
+  <button type="submit">Add your job to our boards to hungry job seekers~</button>
 </form>

@@ -55,5 +55,9 @@ namespace JobOpenings.Objects
     {
       _contact = inputContact;
     }
+    public void SaveJob()
+    {
+      _instances.Add(this);
+    }
   }
 }
