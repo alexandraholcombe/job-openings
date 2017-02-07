@@ -1,0 +1,20 @@
+<h1>Job boards</h1>
+<h2>Add a position to our board</h2>
+<form action="/openings_added" method="post">
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" name="description" id="description">
+  </div>
+  <div class="form-group">
+    <label for="email">Your email:</label>
+    <input type="text" name="email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="contact">Contact:</label>
+    <input type="text" name="contact" id="contact">
+  </div>
+</form>
