@@ -1,29 +1,33 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
 <h1>Job boards</h1>
 <h2>Add a position to our board</h2>
 <form action="/openings_added" method="post">
   <div class="form-group">
     <label for="title">Title:</label>
-    <input type="text" name="title" id="title">
+    <input type="text" name="title" id="title" class="form-control">
   </div>
   <div class="form-group">
     <label for="description">Description:</label>
-    <input type="text" name="description" id="description">
+    <input type="text" name="description" id="description"  class="form-control">
   </div>
   <div class="form-group">
     <label for="name">Your name:</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" class="form-control">
   </div>
   <div class="form-group">
     <label for="email">Your email:</label>
-    <input type="text" name="email" id="email">
+    <input type="text" name="email" id="email" class="form-control">
   </div>
   <div class="form-group">
     <label for="phone-number">Your Phone Number:</label>
-    <input type="text" name="phone-number" id="phone-number">
+    <input type="text" name="phone-number" id="phone-number" class="form-control">
   </div>
   <div class="form-group">
     <label for="address">Your address:</label>
-    <input type="text" name="address" id="address">
+    <input type="text" name="address" id="address" class="form-control">
   </div>
-  <button type="submit">Add your job to our boards to hungry job seekers~</button>
+  <button type="submit" class="btn btn-md btn-danger">Add your job to our boards to hungry job seekers~</button>
 </form>
