@@ -1,7 +1,9 @@
 <h1>This was the job you just posted!</h1>
 <p>@Model.GetTitle()</p>
 <p>@Model.GetDescription()</p>
-<p>@Model.GetEmail()</p>
-<p>@Model.GetContact()</p>
+<p>@Model.GetContact().GetName()</p>
+<p>@Model.GetContact().GetEmail()</p>
+<p>@Model.GetContact().GetPhoneNumber()</p>
+<p>@Model.GetContact().GetAddress()</p>
 <p><a href="/">Add more openings in your rich company?</a></p>
 <button type="button"><a href="/all_openings">All da pozitionzzzzzz up for grabs!!!</a></button>

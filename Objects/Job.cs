@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace JobOpenings.Objects
 {
+
   public class Job
   {
     private string _title;
     private string _description;
-    private string _email;
-    private string _contact;
+    private Contact _contact;
+
     private static List<Job> _instances = new List<Job>{};
 
-    public Job(string title, string description, string email, string contact)
+    public Job(string title, string description, Contact contact)
     {
       _title = title;
       _description = description;
-      _email = email;
       _contact = contact;
     }
 
@@ -39,22 +39,15 @@ namespace JobOpenings.Objects
     {
       _description = inputDescription;
     }
-    public string GetEmail()
-    {
-      return _email;
-    }
-    public void SetEmail(string inputEmail)
-    {
-      _email = inputEmail;
-    }
-    public string GetContact()
+    public Contact GetContact()
     {
       return _contact;
     }
-    public void SetContact(string inputContact)
+    public void SetContact(Contact inputContact)
     {
       _contact = inputContact;
     }
+
     public void SaveJob()
     {
       _instances.Add(this);
